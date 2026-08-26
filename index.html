@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinCheck Zimbabwe — Financial Risk & Intelligence Platform</title>
+    
+    <!-- SEO & Search Optimization -->
+    <meta name="description" content="FinCheck Zimbabwe is the premier Financial Risk and Intelligence Platform bridging formal and informal markets. We offer credit risk advisory, business intelligence, KYC, and asset tracking across Zimbabwe.">
+    <meta name="keywords" content="FinCheck, Zimbabwe, Financial Risk Advisory, Credit Bureau Zimbabwe, KYC Zimbabwe, Business Intelligence Harare, Risk Mitigation, Asset Tracking, Credit Risk Assessment, Formal and Informal Markets">
+    <meta name="author" content="FinCheck Zimbabwe">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://www.fincheck.co.zw/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="FinCheck Zimbabwe — Financial Risk & Intelligence Platform">
+    <meta property="og:description" content="Zimbabwe's premier integrated financial risk ecosystem, driving data stability across formal and informal markets.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fincheck.co.zw/">
+    <meta property="og:image" content="https://www.fincheck.co.zw/media/logo/logo.png">
+    <meta property="og:site_name" content="FinCheck Zimbabwe">
+    <meta property="og:locale" content="en_ZW">
+
+    <link rel="icon" type="image/png" href="media/ico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/load-tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+  </head>
+<body class="bg-cream text-navy font-body">
+
+  <nav class="flex items-center justify-between h-[76px]" id="mainNav">
+    <a href="#" class="flex items-center">
+      <img src="media/logo/logo.png" alt="FinCheck Logo" class="h-10 w-auto brightness-0 invert">
+    </a>
+
+    <ul class="desktop-nav flex items-center gap-8 list-none">
+      <li><a href="#services" class="text-white/70 text-sm tracking-wide hover:text-teal-light transition-colors no-underline">Services</a></li>
+      <li><a href="#about" class="text-white/70 text-sm tracking-wide hover:text-teal-light transition-colors no-underline">About</a></li>
+      <li><a href="#media-section" class="text-white/70 text-sm tracking-wide hover:text-teal-light transition-colors no-underline">Media</a></li>
+      <li>
+        <a href="#portals" class="bg-teal text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-teal-light transition-colors no-underline">
+          Client Sign In
+        </a>
+      </li>
+    </ul>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+<!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#media-section" onclick="closeMobile()">Media</a>
+    <a href="#portals" onclick="closeMobile()">Client Sign In</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+      HERO CAROUSEL — 100vh, 5 slides, auto-loop
+      ═══════════════════════════════════════════ -->
+  <section class="hero-carousel" id="heroCarousel">
+    <div class="glide h-full w-full">
+      <div class="glide__track h-full w-full" data-glide-el="track">
+        <ul class="glide__slides h-full w-full m-0 p-0 list-none">
+          <!-- Slide 1 -->
+          <li class="glide__slide h-full w-full">
+            <div class="slide-placeholder slide-bg-1">
+              <img src="/media/corousel/1.jpg" class="w-full h-full object-cover" alt="">
+            </div>
+          </li>
+          <!-- Slide 2 -->
+          <li class="glide__slide h-full w-full">
+            <div class="slide-placeholder slide-bg-2">
+              <img src="/media/corousel/2.jpg" class="w-full h-full object-cover" alt="">
+            </div>
+          </li>
+          <!-- Slide 3 -->
+          <li class="glide__slide h-full w-full">
+            <div class="slide-placeholder slide-bg-3">
+              <img src="/media/corousel/3.jpg" class="w-full h-full object-cover" alt="">
+            </div>
+          </li>
+          <!-- Slide 4 -->
+          <li class="glide__slide h-full w-full">
+            <div class="slide-placeholder slide-bg-4">
+              <img src="/media/corousel/4.png" class="w-full h-full object-cover" alt="">
+            </div>
+          </li>
+          <!-- Slide 5 -->
+          <li class="glide__slide h-full w-full">
+            <div class="slide-placeholder slide-bg-5">
+              <img src="/media/corousel/3.jpg" class="w-full h-full object-cover" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Gradient overlay for text readability -->
+      <div class="hero-overlay pointer-events-none"></div>
+
+      <!-- Hero text content — pinned left, not centered -->
+      <div class="hero-content pointer-events-none">
+        <p class="text-teal-light text-xs font-medium tracking-[0.2em] uppercase mb-4 font-heading">Financial Risk Advisory</p>
+        <h1 class="font-heading text-white font-bold leading-[1.05] tracking-tight mb-6"
+            style="font-size: clamp(2.25rem, 4.5vw, 4rem);">
+          Mitigating Transactional Risk.<br>
+          Securing <span class="text-teal-light">Financial Futures</span>.
+        </h1>
+        <p class="text-white/55 text-lg leading-relaxed font-light max-w-[540px] mb-10">
+          Zimbabwe's premier Financial Risk Advisor. We build the data infrastructure that protects individuals, institutions, and informal market actors from structural loss.
+        </p>
+        <div class="flex gap-4 flex-wrap mb-12 pointer-events-auto">
+          <a href="#portals"
+            class="bg-teal text-white font-medium text-[15px] px-7 py-3.5 rounded-md hover:bg-teal-light transition-all no-underline inline-flex items-center gap-2">
+            Access Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#services"
+            class="text-white font-normal text-[15px] px-7 py-3.5 rounded-md border border-white/20 hover:border-teal hover:bg-teal/5 transition-all no-underline inline-flex items-center gap-2">
+            View Infrastructure
+          </a>
+        </div>
+        <div class="flex gap-12 pt-8 border-t border-white/10 pointer-events-auto">
+          <div>
+            <div class="font-heading text-2xl font-bold text-teal-light">Dual-Market</div>
+            <div class="text-white/40 text-xs mt-1">Formal & Informal Protections</div>
+          </div>
+          <div>
+            <div class="font-heading text-2xl font-bold text-teal-light">7+</div>
+            <div class="text-white/40 text-xs mt-1">Active Risk Platforms</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel dots -->
+      <div class="carousel-dots glide__bullets pointer-events-auto" data-glide-el="controls[nav]">
+        <button class="carousel-dot glide__bullet" data-glide-dir="=0"><div class="dot-progress"></div></button>
+        <button class="carousel-dot glide__bullet" data-glide-dir="=1"><div class="dot-progress"></div></button>
+        <button class="carousel-dot glide__bullet" data-glide-dir="=2"><div class="dot-progress"></div></button>
+        <button class="carousel-dot glide__bullet" data-glide-dir="=3"><div class="dot-progress"></div></button>
+        <button class="carousel-dot glide__bullet" data-glide-dir="=4"><div class="dot-progress"></div></button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+      SERVICES — Core Infrastructure
+      ═══════════════════════════════════════════ -->
+  <section class="py-24 px-[5vw] bg-cream" id="services">
+    <div class="fade-up max-w-[1400px] mx-auto">
+      <div class="flex justify-between items-end flex-wrap gap-8 mb-16">
+        <div>
+          <p class="text-xs font-heading font-semibold tracking-[0.15em] uppercase text-teal mb-4">/Enterprise Architecture</p>
+          <h2 class="font-heading font-bold text-navy leading-tight tracking-tight"
+              style="font-size: clamp(1.875rem, 4vw, 2.75rem);">
+            The Pillars Of Ecosystem<br>Risk Mitigation
+          </h2>
+        </div>
+        <p class="text-muted text-[17px] max-w-[580px] leading-relaxed font-regular">
+          Our platforms deliver proactive intelligence configured to map the distinct realities of Zimbabwe's financial architecture — far beyond simple credit reports.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+        <!-- CrediSafe -->
+        <div class="service-card bg-white p-10 rounded-2xl border border-teal/10 flex flex-col gap-5 relative">
+          <span class="absolute top-10 right-10 text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wide bg-emerald-50 text-emerald-700">Active</span>
+          <div class="w-14 h-14 bg-teal-pale rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <h3 class="font-heading text-2xl font-bold text-navy tracking-tight">CrediSafe</h3>
+          <div class="text-[15px] text-[#4a596b] leading-relaxed font-regular flex-grow">
+            <p>Bridges peer-to-peer lending, formal enterprise, and financial institutions with informal markets through automated, chat-native credit management.</p>
+            <ul class="mt-3 pl-4 space-y-1.5 list-disc">
+              <li><strong class="font-medium text-navy">P2P & Small Business:</strong> Log loans, issue digital receipts, track repayment in WhatsApp.</li>
+              <li><strong class="font-medium text-navy">Enterprise Web App:</strong> Connect to informal SMEs, expand lending portfolios safely.</li>
+              <li><strong class="font-medium text-navy">Automated Recovery:</strong> Real-time credit scoring and automated payment reminders.</li>
+            </ul>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 text-navy font-medium text-sm px-5 py-2.5 border border-navy rounded-md hover:bg-navy hover:text-white transition-colors w-fit mt-2 no-underline"
+            >
+            Get Started
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+        <!-- Credit Bureau -->
+        <div class="service-card bg-white p-10 rounded-2xl border border-teal/10 flex flex-col gap-5 relative">
+          <span class="absolute top-10 right-10 text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wide bg-emerald-50 text-emerald-700">Active</span>
+          <div class="w-14 h-14 bg-teal-pale rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+          </div>
+          <h3 class="font-heading text-2xl font-bold text-navy tracking-tight">Credit Bureau</h3>
+          <p class="text-[15px] text-[#4a596b] leading-relaxed font-regular flex-grow">
+            The predictive cornerstone of credit risk assessment. Access verified repayment histories, calculated risk indicators, and behavioral tracking profiles to shield capital cross-sector.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 text-navy font-medium text-sm px-5 py-2.5 border border-navy rounded-md hover:bg-navy hover:text-white transition-colors w-fit mt-2 no-underline"
+            >
+            Access Engine
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+        <!-- Business Intelligence Report -->
+        <div class="service-card bg-white p-10 rounded-2xl border border-teal/10 flex flex-col gap-5 relative">
+          <span class="absolute top-10 right-10 text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wide bg-emerald-50 text-emerald-700">Active</span>
+          <div class="w-14 h-14 bg-teal-pale rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+          </div>
+          <h3 class="font-heading text-2xl font-bold text-navy tracking-tight">Business Intelligence</h3>
+          <p class="text-[15px] text-[#4a596b] leading-relaxed font-regular flex-grow">
+            Deep-dive corporate forensics to verify the legal legitimacy, ultimate beneficial ownership, and financial creditworthiness of prospective customers, partners, or suppliers.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 text-navy font-medium text-sm px-5 py-2.5 border border-navy rounded-md hover:bg-navy hover:text-white transition-colors w-fit mt-2 no-underline"
+            >
+            Generate Report
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+        <!-- KYC / KYS -->
+        <div class="service-card bg-white p-10 rounded-2xl border border-teal/10 flex flex-col gap-5 relative">
+          <span class="absolute top-10 right-10 text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wide bg-emerald-50 text-emerald-700">Active</span>
+          <div class="w-14 h-14 bg-teal-pale rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+          </div>
+          <h3 class="font-heading text-2xl font-bold text-navy tracking-tight">KYC / KYS</h3>
+          <p class="text-[15px] text-[#4a596b] leading-relaxed font-regular flex-grow">
+            Complete outsourcing solutions for Know Your Customer and Know Your Supplier compliance mandates, strengthening risk frameworks without increasing operational friction.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 text-navy font-medium text-sm px-5 py-2.5 border border-navy rounded-md hover:bg-navy hover:text-white transition-colors w-fit mt-2 no-underline"
+            >
+            Compliance Desk
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+        <!-- AssetSafe -->
+        <div class="service-card bg-white p-10 rounded-2xl border border-teal/10 flex flex-col gap-5 relative">
+          <span class="absolute top-10 right-10 text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wide bg-emerald-50 text-emerald-700">Active</span>
+          <div class="w-14 h-14 bg-teal-pale rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3 class="font-heading text-2xl font-bold text-navy tracking-tight">AssetSafe Suite</h3>
+          <p class="text-[15px] text-[#4a596b] leading-relaxed font-regular">
+            A unified digital asset ledger to protect physical capital and track asset claims across formal and informal credit systems.
+          </p>
+          <div class="bg-cream/80 p-4 rounded-xl border border-navy/5 my-1">
+            <p class="text-[11px] font-bold uppercase text-muted tracking-wide mb-2">Component Matrix</p>
+            <div class="flex justify-between text-[13px] py-1"><strong class="font-medium">Hire Purchase Tracking</strong><span class="text-emerald-600 text-[11px] font-semibold">● Live</span></div>
+            <div class="flex justify-between text-[13px] py-1"><strong class="font-medium">Collateral Registry</strong><span class="text-emerald-600 text-[11px] font-semibold">● Live</span></div>
+            <div class="flex justify-between text-[13px] py-1"><strong class="font-medium">Asset Registry</strong><span class="text-emerald-600 text-[11px] font-semibold">● Live</span></div>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 text-navy font-medium text-sm px-5 py-2.5 border border-navy rounded-md hover:bg-navy hover:text-white transition-colors w-fit mt-2 no-underline"
+            >
+            Access Portals
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+        <!-- RentSafe -->
+        <div class="service-card bg-white p-10 rounded-2xl border border-teal/10 flex flex-col gap-5 relative">
+          <span class="absolute top-10 right-10 text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wide bg-emerald-50 text-emerald-700">Active</span>
+          <div class="w-14 h-14 bg-teal-pale rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          </div>
+          <h3 class="font-heading text-2xl font-bold text-navy tracking-tight">RentSafe</h3>
+          <div class="text-[15px] text-[#4a596b] leading-relaxed font-regular flex-grow">
+            <p>End-to-end property management for real estate funds, managers, and institutional landlords:</p>
+            <ul class="mt-3 pl-4 space-y-1.5 list-disc">
+              <li>Rigorous tenant risk screening</li>
+              <li>Automated maintenance workflows and inspections</li>
+              <li>Systematized rental arrears collection</li>
+            </ul>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 text-navy font-medium text-sm px-5 py-2.5 border border-navy rounded-md hover:bg-navy hover:text-white transition-colors w-fit mt-2 no-underline"
+            >
+            Property Desk
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+        <!-- BuildSafe — full width -->
+        <div class="service-card bg-navy text-white p-10 rounded-2xl border border-teal/10 flex flex-col gap-5 relative md:col-span-2 xl:col-span-1">
+          <span class="absolute top-10 right-10 text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wide bg-teal/20 text-teal-regular">Active</span>
+          <div class="w-14 h-14 bg-teal/15 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3 class="font-heading text-2xl font-bold tracking-tight">BuildSafe</h3>
+          <p class="text-[15px] text-white/60 leading-relaxed font-light flex-grow">
+            Escrow-backed milestone financing, contractor verification, and project tracking that prevents budget fraud and ensures builds are completed to spec.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 text-white font-medium text-sm px-5 py-2.5 border border-white/20 rounded-md hover:bg-white/10 transition-colors w-fit mt-2 no-underline"
+            >
+            Explore BuildSafe
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+      ABOUT — Strategic Mandate
+      ═══════════════════════════════════════════ -->
+  <section class="bg-white py-24 px-[5vw]" id="about">
+    <div class="fade-up max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Image Side -->
+      <div class="relative rounded-2xl overflow-hidden shadow-xl h-[400px] lg:h-[550px]">
+        <img src="/media/corousel/1.jpg" alt="Team collaborating" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-navy/10 mix-blend-multiply"></div>
+      </div>
+      
+      <!-- Content Side -->
+      <div>
+        <p class="text-teal text-xs font-heading font-semibold tracking-[0.15em] uppercase mb-4">/Our Company</p>
+        <h2 class="font-heading font-bold text-navy leading-tight tracking-tight mb-6"
+            style="font-size: clamp(1.875rem, 4vw, 2.75rem);">
+          Bridging Financial Realities
+        </h2>
+        <p class="text-muted text-[17px] leading-relaxed font-regular mb-5">
+          We believe structured data shouldn't be trapped within traditional banking spaces. FinCheck operates dynamically across both the formal corporate economy and the deeply active informal trade sectors of Zimbabwe.
+        </p>
+        <p class="text-muted text-[17px] leading-relaxed font-regular mb-8">
+          By giving cross-market access to clear transactional intelligence, we ensure your enterprise minimizes default risks. Our critical analytical matrix secures transactions and traces systemic exposures.
+        </p>
+        <ul class="space-y-4 mb-10">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-teal mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-[15px] text-navy font-medium">Dual-Economy Risk Integration</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-teal mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-[15px] text-navy font-medium">Verified Proof-of-Ownership Logs</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-teal mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-[15px] text-navy font-medium">Encrypted Data Assurance</span>
+          </li>
+        </ul>
+        <a href="#contact" class="inline-block bg-navy text-white text-[15px] font-medium px-8 py-3.5 rounded-md hover:bg-teal transition-colors no-underline">
+          Speak to an Advisor
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+      FAQ SECTION
+      ═══════════════════════════════════════════ -->
+  <section class="py-24 px-[5vw] bg-cream" id="faq">
+    <div class="fade-up max-w-[800px] mx-auto">
+      <div class="text-center mb-16">
+        <p class="text-xs font-heading font-semibold tracking-[0.15em] uppercase text-teal mb-4">/Common Questions</p>
+        <h2 class="font-heading font-bold text-navy leading-tight tracking-tight"
+            style="font-size: clamp(1.875rem, 4vw, 2.75rem);">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-white rounded-xl border border-teal/10 overflow-hidden open:shadow-md transition-all">
+          <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-navy font-heading text-lg">
+            <span>What is the difference between formal and informal risk mapping?</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <div class="text-muted text-[15px] font-regular px-6 pb-6 leading-relaxed">
+            Formal risk mapping relies on traditional banking data, CRB scores, and registered corporate financials. Informal risk mapping uses alternative data points like mobile money flows, vendor payment histories, and community vouching to accurately assess the creditworthiness of unbanked actors.
+          </div>
+        </details>
+        
+        <details class="group bg-white rounded-xl border border-teal/10 overflow-hidden open:shadow-md transition-all">
+          <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-navy font-heading text-lg">
+            <span>How secure is the collateral registry?</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <div class="text-muted text-[15px] font-regular px-6 pb-6 leading-relaxed">
+            Our collateral registry employs bank-grade encryption and immutable audit logs. Once an asset is registered and tied to a credit facility, it cannot be double-pledged across any of our participating formal or informal lending partners.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-xl border border-teal/10 overflow-hidden open:shadow-md transition-all">
+          <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-navy font-heading text-lg">
+            <span>Can SMEs use CrediSafe directly?</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <div class="text-muted text-[15px] font-regular px-6 pb-6 leading-relaxed">
+            Yes. CrediSafe is built specifically to bridge the gap. SMEs can log their vendor financing, issue digital receipts, and track repayment flows entirely through our WhatsApp integration without needing complex desktop software.
+          </div>
+        </details>
+        
+        <details class="group bg-white rounded-xl border border-teal/10 overflow-hidden open:shadow-md transition-all">
+          <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-navy font-heading text-lg">
+            <span>What forms of ID are accepted for KYC?</span>
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <div class="text-muted text-[15px] font-regular px-6 pb-6 leading-relaxed">
+            We support automated verification for Zimbabwean National IDs, valid Passports, and Driver's Licenses. For corporate entities, we require CR14/CR6 documents, Certificates of Incorporation, and valid tax clearance certificates for comprehensive KYB vetting.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+      CONTACT SECTION (kept, just removed from nav)
+      ═══════════════════════════════════════════ -->
+  <section class="py-24 px-[5vw] bg-cream border-t border-teal/10" id="contact">
+    <div class="fade-up max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div>
+        <p class="text-xs font-heading font-semibold tracking-[0.15em] uppercase text-teal mb-4">/Get In Touch</p>
+        <h3 class="font-heading text-3xl font-bold text-navy mb-4">Contact Details</h3>
+        <p class="text-muted font-light mb-10">Reach out to our risk advisors or visit our Harare headquarters.</p>
+
+        <div class="space-y-6">
+          <div class="flex gap-4 items-start">
+            <svg class="w-5 h-5 text-teal mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h5 class="text-sm font-semibold text-navy">Physical Address</h5>
+              <p class="text-sm text-muted">8th Floor Club Chambers, Cnr N. Mandela Avenue/3rd Street, Harare, Zimbabwe</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <svg class="w-5 h-5 text-teal mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <h5 class="text-sm font-semibold text-navy">Email</h5>
+              <a href="mailto:info@fincheck.co.zw" class="text-sm text-muted hover:text-teal transition-colors no-underline">info@fincheck.co.zw</a>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <svg class="w-5 h-5 text-teal mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <h5 class="text-sm font-semibold text-navy">Telephones</h5>
+              <p class="text-sm text-muted">+263 (04) 704891-5 &nbsp;|&nbsp; +263 (04) 708698</p>
+              <p class="text-sm text-muted">Mobile: +263 (0) 715239711</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <svg class="w-5 h-5 text-teal mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <div>
+              <h5 class="text-sm font-semibold text-navy">Online</h5>
+              <a href="https://www.fincheck.co.zw" target="_blank" class="text-sm text-muted hover:text-teal transition-colors no-underline">www.fincheck.co.zw</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-10 rounded-2xl border border-teal/10 shadow-sm">
+        <h4 class="font-heading text-xl font-bold text-navy mb-6">Send a Message</h4>
+        <form action="mailto:info@fincheck.co.zw" method="post" enctype="text/plain" class="space-y-5">
+          <div>
+            <label for="contact-name" class="block text-xs font-medium text-navy mb-1.5">Full Name</label>
+            <input type="text" id="contact-name" name="Name" placeholder="e.g. John Doe" required
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm bg-cream/60 outline-none focus:border-teal focus:ring-2 focus:ring-teal/10 transition-all font-body">
+          </div>
+          <div>
+            <label for="contact-email" class="block text-xs font-medium text-navy mb-1.5">Email Address</label>
+            <input type="email" id="contact-email" name="Email" placeholder="e.g. john@company.co.zw" required
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm bg-cream/60 outline-none focus:border-teal focus:ring-2 focus:ring-teal/10 transition-all font-body">
+          </div>
+          <div>
+            <label for="contact-subject" class="block text-xs font-medium text-navy mb-1.5">Subject</label>
+            <input type="text" id="contact-subject" name="Subject" placeholder="Inquiry regarding CrediSafe / Advisory Services"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm bg-cream/60 outline-none focus:border-teal focus:ring-2 focus:ring-teal/10 transition-all font-body">
+          </div>
+          <div>
+            <label for="contact-message" class="block text-xs font-medium text-navy mb-1.5">Message</label>
+            <textarea id="contact-message" name="Message" rows="4" placeholder="How can FinCheck assist your organisation?" required
+                      class="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm bg-cream/60 outline-none focus:border-teal focus:ring-2 focus:ring-teal/10 transition-all font-body resize-y"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-teal text-white font-medium text-[15px] py-3.5 rounded-lg hover:bg-teal-light transition-colors cursor-pointer">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+      PORTALS — Secure Access
+      ═══════════════════════════════════════════ -->
+  <section class="py-24 px-[5vw] bg-[#eef3f7]" id="portals">
+    <div class="fade-up max-w-[1200px] mx-auto">
+      <div class="text-center mb-16">
+        <p class="text-xs font-heading font-semibold tracking-[0.15em] uppercase text-teal mb-4">/Secure Gateways</p>
+        <h2 class="font-heading font-bold text-navy leading-tight tracking-tight mb-4"
+            style="font-size: clamp(1.875rem, 4vw, 2.75rem);">
+          Sign In to Your Platform
+        </h2>
+        <p class="text-muted text-[17px] max-w-[520px] mx-auto leading-relaxed font-light">
+          Select your authorized terminal to manage credentials, query matrices, and verify assets.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <a href="#" class="portal-card bg-white rounded-2xl p-8 flex flex-col items-center text-center gap-4 no-underline border border-teal/10"
+          >
+          <div class="w-14 h-14 bg-teal/15 rounded-2xl flex items-center justify-center">
+            <svg class="w-7 h-7 text-teal-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <div class="font-heading text-lg font-bold text-navy">CrediSafe</div>
+          <div class="text-xs text-muted font-light">WhatsApp & Web Credit Hub</div>
+          <div class="bg-teal text-white font-medium text-sm py-2.5 rounded-lg w-full text-center mt-2 hover:bg-teal-light transition-colors">Sign In</div>
+        </a>
+
+        <a href="#" class="portal-card bg-white rounded-2xl p-8 flex flex-col items-center text-center gap-4 no-underline border border-teal/10"
+          >
+          <div class="w-14 h-14 bg-teal/15 rounded-2xl flex items-center justify-center">
+            <svg class="w-7 h-7 text-teal-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+          </div>
+          <div class="font-heading text-lg font-bold text-navy">Credit Bureau</div>
+          <div class="text-xs text-muted font-light">Risk Profile Terminal</div>
+          <div class="bg-teal text-white font-medium text-sm py-2.5 rounded-lg w-full text-center mt-2 hover:bg-teal-light transition-colors">Sign In</div>
+        </a>
+
+        <a href="#" class="portal-card bg-white rounded-2xl p-8 flex flex-col items-center text-center gap-4 no-underline border border-teal/10"
+          >
+          <div class="w-14 h-14 bg-teal/15 rounded-2xl flex items-center justify-center">
+            <svg class="w-7 h-7 text-teal-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+          </div>
+          <div class="font-heading text-lg font-bold text-navy">Business Intel</div>
+          <div class="text-xs text-muted font-light">Corporate Forensics & KYB</div>
+          <div class="bg-teal text-white font-medium text-sm py-2.5 rounded-lg w-full text-center mt-2 hover:bg-teal-light transition-colors">Sign In</div>
+        </a>
+
+        <a href="#" class="portal-card bg-white rounded-2xl p-8 flex flex-col items-center text-center gap-4 no-underline border border-teal/10"
+          >
+          <div class="w-14 h-14 bg-teal/15 rounded-2xl flex items-center justify-center">
+            <svg class="w-7 h-7 text-teal-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          </div>
+          <div class="font-heading text-lg font-bold text-navy">RentSafe</div>
+          <div class="text-xs text-muted font-light">Property Tenancy Dashboard</div>
+          <div class="bg-teal text-white font-medium text-sm py-2.5 rounded-lg w-full text-center mt-2 hover:bg-teal-light transition-colors">Sign In</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+      FOOTER — Redesigned
+      ═══════════════════════════════════════════ -->
+  <footer class="bg-navy">
+    <!-- Main footer -->
+    <div class="max-w-[1400px] mx-auto px-[5vw] pt-20 pb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
+
+        <!-- Brand column -->
+        <div class="lg:col-span-4">
+          <a href="#" class="inline-block mb-6">
+            <img src="media/logo/logo.png" alt="FinCheck Logo" class="h-9 w-auto brightness-0 invert">
+          </a>
+          <p class="text-white/35 text-sm leading-relaxed max-w-[320px] font-light">
+            Zimbabwe's integrated Financial Risk Advisory ecosystem — driving transactional data stability across formal and informal markets.
+          </p>
+          <div class="flex gap-4 mt-8">
+            <a href="#" class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center hover:bg-teal/20 hover:border-teal/30 transition-all no-underline" aria-label="LinkedIn">
+              <svg class="w-4 h-4 text-white/50" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center hover:bg-teal/20 hover:border-teal/30 transition-all no-underline" aria-label="Facebook">
+              <svg class="w-4 h-4 text-white/50" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center hover:bg-teal/20 hover:border-teal/30 transition-all no-underline" aria-label="Twitter">
+              <svg class="w-4 h-4 text-white/50" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Platform links -->
+        <div class="lg:col-span-2">
+          <h5 class="text-[11px] font-heading font-semibold tracking-[0.12em] uppercase text-teal-light mb-5">Platforms</h5>
+          <ul class="list-none space-y-3">
+            <li><a href="#"  class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">CrediSafe</a></li>
+            <li><a href="#"  class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">Credit Bureau</a></li>
+            <li><a href="#"  class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">Business Intelligence</a></li>
+            <li><a href="#"  class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">RentSafe</a></li>
+            <li><a href="#"  class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">AssetSafe</a></li>
+            <li><a href="#"  class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">BuildSafe</a></li>
+          </ul>
+        </div>
+
+        <!-- Company links -->
+        <div class="lg:col-span-2">
+          <h5 class="text-[11px] font-heading font-semibold tracking-[0.12em] uppercase text-teal-light mb-5">Company</h5>
+          <ul class="list-none space-y-3">
+            <li><a href="#about" class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">About Us</a></li>
+            <li><a href="#services" class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">Services</a></li>
+            <li><a href="#contact" class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal links -->
+        <div class="lg:col-span-2">
+          <h5 class="text-[11px] font-heading font-semibold tracking-[0.12em] uppercase text-teal-light mb-5">Legal</h5>
+          <ul class="list-none space-y-3">
+            <li><a href="#" class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">Terms of Service</a></li>
+            <li><a href="#" class="footer-link text-sm text-white/45 no-underline hover:text-teal-light">Risk Standards</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact quick -->
+        <div class="lg:col-span-2">
+          <h5 class="text-[11px] font-heading font-semibold tracking-[0.12em] uppercase text-teal-light mb-5">Reach Us</h5>
+          <div class="space-y-3">
+            <a href="mailto:info@fincheck.co.zw" class="block text-sm text-white/45 no-underline hover:text-teal-light transition-colors">info@fincheck.co.zw</a>
+            <p class="text-sm text-white/35">+263 (04) 704891-5</p>
+            <p class="text-sm text-white/35 leading-relaxed">8th Floor Club Chambers,<br>Harare, Zimbabwe</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-white/[0.05]">
+      <div class="max-w-[1400px] mx-auto px-[5vw] py-5 flex justify-between items-center flex-wrap gap-3">
+        <p class="text-xs text-white/25">&copy; 2026 FinCheck Zimbabwe. All rights reserved.</p>
+        <p class="text-xs text-white/25">Harare, Zimbabwe</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="/assets/js/main.js"></script>
+
+</body>
+</html>

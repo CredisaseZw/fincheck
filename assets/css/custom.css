@@ -1,0 +1,167 @@
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
+
+  /* ── Carousel ── */
+  .hero-carousel { position: relative; width: 100%; height: 100vh; overflow: hidden; }
+
+  .slide-placeholder {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .slide-bg-1 { background: linear-gradient(135deg, #163552 0%, #091d2c 60%, #0d253a 100%); }
+  .slide-bg-2 { background: linear-gradient(135deg, #1a3a4a 0%, #0b2035 50%, #2b678c 100%); }
+  .slide-bg-3 { background: linear-gradient(135deg, #0d253a 0%, #163552 40%, #091d2c 100%); }
+  .slide-bg-4 { background: linear-gradient(135deg, #2b678c 0%, #091d2c 60%, #163552 100%); }
+  .slide-bg-5 { background: linear-gradient(135deg, #091d2c 0%, #1a3a4a 50%, #0d253a 100%); }
+
+  /* ── Carousel dots ── */
+  .carousel-dots { position: absolute; bottom: 2.5rem; left: 5vw; display: flex; gap: 10px; z-index: 20; }
+  .carousel-dot {
+    width: 40px; height: 3px;
+    background: rgba(255,255,255,0.25);
+    border: none; cursor: pointer;
+    transition: background 0.3s, width 0.3s;
+    border-radius: 0;
+    padding: 0;
+  }
+  .carousel-dot.glide__bullet--active { background: rgba(255,255,255,0.9); width: 60px; }
+
+  /* ── Progress bar for active slide ── */
+  .carousel-dot .dot-progress {
+    height: 100%; width: 0; background: rgba(255,255,255,0.9);
+    transition: none;
+  }
+  .carousel-dot.glide__bullet--active .dot-progress {
+    animation: dotFill 5s linear forwards;
+  }
+  @keyframes dotFill {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  /* ── Hero content overlay ── */
+  .hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(9,29,44,0.95) 0%, rgba(9,29,44,0.85) 45%, rgba(9,29,44,0.4) 75%, transparent 100%);
+    z-index: 10;
+  }
+
+  .hero-content {
+    position: absolute; top: 0; left: 0; bottom: 0;
+    z-index: 15;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 0 5vw 7rem;
+    max-width: 960px;
+  }
+
+  /* ── Nav ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    transition: background 0.3s, border-color 0.3s;
+    padding: 0 5vw;
+  }
+  nav.scrolled {
+    background: rgba(9,29,44,0.97);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(43,103,140,0.12);
+  }
+
+  /* ── Service card hover ── */
+  .service-card {
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s;
+    box-shadow: 0 10px 30px rgba(9,29,44,0.05);
+  }
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(9,29,44,0.12);
+  }
+
+  /* ── Portal card ── */
+  .portal-card {
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .portal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  }
+
+  /* ── Value card ── */
+  .value-card {
+    transition: border-color 0.25s, background 0.25s;
+  }
+  .value-card:hover {
+    border-color: rgba(61,130,174,0.25);
+    background: rgba(255,255,255,0.06);
+  }
+
+  /* ── Footer link hover ── */
+  .footer-link {
+    position: relative;
+    transition: color 0.2s;
+  }
+  .footer-link::after {
+    content: '';
+    position: absolute; bottom: -2px; left: 0;
+    width: 0; height: 1px;
+    background: #3d82ae;
+    transition: width 0.25s;
+  }
+  .footer-link:hover::after { width: 100%; }
+
+  /* ── Mobile menu ── */
+  .mobile-menu {
+    position: fixed; inset: 0;
+    background: rgba(9,29,44,0.98);
+    backdrop-filter: blur(20px);
+    z-index: 90;
+    display: flex; flex-direction: column;
+    align-items: flex-start; justify-content: center;
+    padding: 0 10vw;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+  }
+  .mobile-menu.open { transform: translateX(0); }
+  .mobile-menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem; font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .mobile-menu a:hover { color: #3d82ae; }
+
+  /* ── Hamburger ── */
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; z-index: 110; }
+  .hamburger span {
+    display: block; width: 24px; height: 2px;
+    background: rgba(255,255,255,0.85);
+    margin: 5px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+  @media (max-width: 768px) {
+    .hamburger { display: block; }
+    .desktop-nav { display: none !important; }
+    .hero-content { max-width: 100%; padding: 0 6vw 5rem; }
+    .carousel-dots { bottom: 1.5rem; }
+  }
+
+
+
+  /* ── Subtle entry animations ── */
+  .fade-up {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
