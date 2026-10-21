@@ -1,9 +1,16 @@
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
 
+  /* ── Layout vars ── */
+  :root { --nav-h: 88px; } /* set to your real navbar height */
+
   /* ── Carousel ── */
-  .hero-carousel { position: relative; width: 100%; height: 100vh; overflow: hidden; }
+  .hero-carousel { position: relative; width: 100%; min-height: 100svh; overflow: hidden; }
+  .hero-carousel .glide { position: relative; min-height: 100svh; }
+
+  /* slides are a background layer so they don't dictate the section height */
+  .hero-carousel .glide__track { position: absolute; inset: 0; }
 
   .slide-placeholder {
     width: 100%; height: 100%;
@@ -54,11 +61,13 @@
   }
 
   .hero-content {
-    position: absolute; top: 0; left: 0; bottom: 0;
+    position: relative;               /* in flow, so it grows the section */
     z-index: 15;
-    display: flex; flex-direction: column; justify-content: flex-end;
-    padding: 0 5vw 7rem;
+    width: 100%;
     max-width: 960px;
+    min-height: 100svh;               /* still bottom-anchored on tall screens */
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: calc(var(--nav-h) + 1.5rem) 5vw 7rem;  /* top clears the nav */
   }
 
   /* ── Nav ── */
@@ -153,11 +162,18 @@
   @media (max-width: 768px) {
     .hamburger { display: block; }
     .desktop-nav { display: none !important; }
-    .hero-content { max-width: 100%; padding: 0 6vw 5rem; }
+    .hero-content { max-width: 100%; padding: calc(var(--nav-h) + 1rem) 6vw 5rem; }
     .carousel-dots { bottom: 1.5rem; }
   }
 
-
+  /* ── Short screens: tighten hero spacing ── */
+  @media (max-height: 720px) {
+    .hero-content h1 { font-size: clamp(2rem, 6.5vh, 3.25rem) !important; margin-bottom: 1rem; }
+    .hero-content > p.text-lg { font-size: 1rem; margin-bottom: 1.5rem; }
+    .hero-content .mb-12 { margin-bottom: 1.5rem; }
+    .hero-content .pt-8 { padding-top: 1rem; }
+    .hero-content { padding-bottom: 5rem; }
+  }
 
   /* ── Subtle entry animations ── */
   .fade-up {
